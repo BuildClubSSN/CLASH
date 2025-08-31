@@ -1,8 +1,9 @@
 Selecting the right batteries for embedded projects and robotics requires careful consideration of the load, component datasheets, current requirements, voltage endurance, and the battery’s C rating. The following report outlines the structured approach, key decision factors, and reference materials for effective battery selection in such applications.
 
-https://www.n-denkei.com/india/topics/product_info/3264/
-https://husarion.com/blog/batteries-for-mobile-robots/
-https://manlybattery.com/choosing-the-right-robot-battery-a-ultimate-guide/
+- https://www.n-denkei.com/india/topics/product_info/3264/
+- https://husarion.com/blog/batteries-for-mobile-robots/
+- https://manlybattery.com/choosing-the-right-robot-battery-a-ultimate-guide/
+- https://www.large-battery.com/blog/the-best-battery-for-robots-a-guide-to-powering-your automation/#:~:text=The%20type%20of%20battery%2C%20voltage%2C%20and%20capacity%20must%20be%20selected,reliability%20and%20safety%20during%20operation.
 
 ## Determining the Load Requirements
 - Before choosing a battery, it is essential to calculate the total power consumption of the system under various operating scenarios.
@@ -55,4 +56,5 @@ https://manlybattery.com/choosing-the-right-robot-battery-a-ultimate-guide/
 - https://youtu.be/jgUVTZJyzoo?si=ymesC_FbXvpbry2j
 
 - https://www.youtube.com/watch?v=EnokkBZmPQw  How to NOT Blow Up Your Robot - Motors, Batteries, ESCs and More Explained!
+
 
