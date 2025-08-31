@@ -53,7 +53,7 @@ A motor driver is like the **nerves** and acts as the bridge between the **low-p
 - https://youtu.be/Rc892r--njw?si=6e6Eese3I6LAIrwG
 - https://youtu.be/ygrsIqWOh3Y?si=8hvssUIPGXCJOttm 
 - https://youtu.be/PVyAcgYkzDs?si=ws-6QMoseQZUur2q
-  tb6612fng
+- tb6612fng
 - https://youtu.be/JPPTRj0KWbg?si=A0KiI495qPoiZErn 
 - https://youtu.be/nCcb5FTXvok?si=tbVxD2HFCq25izCH
 - https://youtu.be/3LBiyBTnt7g?si=wIsaRPrNwo-9rhaA 
