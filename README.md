@@ -57,7 +57,7 @@ As the robot navigates the path, it must identify and count all colored cubes. T
 
 #### Navigation and Delivery:
 
-* The track may contain loops, right-angle turns, acute turns, or diode-shaped paths.
+* The track may contain loops, intersection, t - junctions, right-angle turns, acute turns, or diode-shaped paths.
 * The end of counting is indicated not by an intersection, but by a series of broken black lines on the track.
 * For intersections that occur before the broken line region in Phase 2, the bot is hardcoded to **always move straight**.
 * When the **broken lines are detected**, the bot performs a 180° turn, returns to the **start zone** (again detected by a black region greater than 25 mm), executes another 180° turn, and begins the **pick-and-place task**.
