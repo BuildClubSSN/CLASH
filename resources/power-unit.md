@@ -3,13 +3,23 @@ Selecting the right batteries for embedded projects and robotics requires carefu
 - https://www.n-denkei.com/india/topics/product_info/3264/
 - https://husarion.com/blog/batteries-for-mobile-robots/
 - https://manlybattery.com/choosing-the-right-robot-battery-a-ultimate-guide/
-- https://www.large-battery.com/blog/the-best-battery-for-robots-a-guide-to-powering-your automation/#:~:text=The%20type%20of%20battery%2C%20voltage%2C%20and%20capacity%20must%20be%20selected,reliability%20and%20safety%20during%20operation.
+- https://www.large-battery.com/blog/the-best-battery-for-robots-a-guide-to-powering-your-automation/#:~:text=The%20type%20of%20battery%2C%20voltage%2C%20and%20capacity%20must%20be%20selected,reliability%20and%20safety%20during%20operation.
 
 ## Determining the Load Requirements
 - Before choosing a battery, it is essential to calculate the total power consumption of the system under various operating scenarios.
 - Summing up the current required by all components: motors, sensors, processors, communication modules, and other accessories
 - Measuring both peak and average expected current draws, as robotics and embedded systems often have dynamic loads (e.g., motors may require high current during    startup or rapid movement)
 - Considering operational runtime goals to estimate required battery capacity (in ampere-hours, Ah).
+- We use two 3.7V LiPo batteries
+- Motors need 6V to run; these 2 batteries should easily be able to provide that
+- 1A continuous current discharge
+- For a robot using two 6V 300 RPM N20 motors, a color sensor for line following and detection, and a gripper for pick-and-place tasks, it's essential to select a
+- battery based on both desired speed (fast or medium) and the power needed for multitasking. Core selection criteria include voltage compatibility, rated and
+- peak current, battery capacity (runtime), and suitable C rating for safe discharge performance.
+- For example
+- Step 1: Motor and Component Specifications
+- Each N20 motor (6V, 300 RPM) typically draws a no-load current of ~40mA, and a stall current up to ~670mA (0.67A) at 6V.
+- Two motors in worst-case (stall) draw: 2×0.67A=1.34A
 
 ## Reading Component Datasheets
 - When analyzing datasheets for components (motors, ICs, regulators).
@@ -35,6 +45,9 @@ Selecting the right batteries for embedded projects and robotics requires carefu
 - For control boards or sensors with low and steady power draw, low C rating batteries (C5–C20) suffice; for drive motors or active robotic arms, higher C rating
   (C10–C50 or more) is needed.
 - C rating impacts both performance (high C for fast, responsive robotics) and longevity (lower C for steady, longer runtime).
+- For a bot to go very fast, choose a higher C rating battery that can handle quick, strong bursts of current and sustain peak demand if accelerating or
+  maneuvering aggressively. E.g., LiPo 7.4V, 1000mAh, 25C pack: 1A x 25C = 25A max discharge is safe for peak needs.
+- For medium pace (efficient, multitasking): NiMH 6V pack, 1500–2200mAh, 5C–10C, safe discharge for longer duration.
 - https://youtu.be/4qIYyaRKGVE?si=ksubmSPCQ4fLZJ5z
 - https://youtu.be/cxkVxi9P0EA?si=nUjOnZRLjMaRgzDZ
 
@@ -56,5 +69,6 @@ Selecting the right batteries for embedded projects and robotics requires carefu
 - https://youtu.be/jgUVTZJyzoo?si=ymesC_FbXvpbry2j
 
 - https://www.youtube.com/watch?v=EnokkBZmPQw  How to NOT Blow Up Your Robot - Motors, Batteries, ESCs and More Explained!
+
 
 
