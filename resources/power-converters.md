@@ -28,7 +28,7 @@ using multiple LM317s for the 4 or 3(excluding 12v) voltage outputs. the problem
 using AM1117(module) or LM1117(TO-220 package) for 3.3v, 7805 or AM1117(module) for 5v, and 7809 for 9v, the 12v will be just straight from the DC jack like the power supply module was using, or a 7812 if wanted to use higher than 12v input voltage.
 
 
-- LM317
+- Voltage regulator LM317
 https://robu.in/product/lm317-dc-linear-regulator-dc-dc-4-540v-turn-1-237v-step-down-power-module-adjustable/
 - Buck converter
 https://robu.in/product/lm2596s-dc-dc-buck-converter-power-supply/
