@@ -5,6 +5,8 @@ Selecting the right batteries for embedded projects and robotics requires carefu
 - https://manlybattery.com/choosing-the-right-robot-battery-a-ultimate-guide/
 - https://www.large-battery.com/blog/the-best-battery-for-robots-a-guide-to-powering-your-automation/#:~:text=The%20type%20of%20battery%2C%20voltage%2C%20and%20capacity%20must%20be%20selected,reliability%20and%20safety%20during%20operation.
 
+- See this https://www.instructables.com/Make-the-Tiniest-Line-Follower-Robot-Without-a-Mic/
+
 ## Determining the Load Requirements
 - Before choosing a battery, it is essential to calculate the total power consumption of the system under various operating scenarios.
 - Summing up the current required by all components: motors, sensors, processors, communication modules, and other accessories
@@ -33,6 +35,9 @@ Selecting the right batteries for embedded projects and robotics requires carefu
 - Verify that all downstream components tolerate the maximum fully charged voltage; for example, Li-Ion batteries may charge up to 4.2V per cell (8.4V for 2S),
   while most devices expect nominal cell voltage (3.7V per cell).
 
+# Battery weight, loading effects
+- Battery weight and voltage significantly impact a robot’s ability to perform line-following, color sensing, and gripper tasks due to their effect on power
+- consumption, sensor stability, and total runtime
 ## Understanding Battery C Rating and Choosing Appropriately
 - What is C Rating?
 - The C rating quantifies how quickly a battery can be discharged relative to its capacity. A battery with a capacity of 1000mAh (1Ah) and a C rating of 10 (10C)
@@ -69,6 +74,7 @@ Selecting the right batteries for embedded projects and robotics requires carefu
 - https://youtu.be/jgUVTZJyzoo?si=ymesC_FbXvpbry2j
 
 - https://www.youtube.com/watch?v=EnokkBZmPQw  How to NOT Blow Up Your Robot - Motors, Batteries, ESCs and More Explained!
+
 
 
 
