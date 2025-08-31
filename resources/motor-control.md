@@ -49,6 +49,22 @@ A motor driver is like the **nerves** and acts as the bridge between the **low-p
 
 - [Motor Driver Basics – Last Minute Engineers](https://lastminuteengineers.com/l298n-dc-stepper-driver-arduino-tutorial/)  
 - [All you need to know about motors](https://www.youtube.com/watch?v=CjEYVcPu2vM)
+- different H bridge drivers
+- https://youtu.be/Rc892r--njw?si=6e6Eese3I6LAIrwG
+- https://youtu.be/ygrsIqWOh3Y?si=8hvssUIPGXCJOttm 
+- https://youtu.be/PVyAcgYkzDs?si=ws-6QMoseQZUur2q
+  tb6612fng
+- https://youtu.be/JPPTRj0KWbg?si=A0KiI495qPoiZErn 
+- https://youtu.be/nCcb5FTXvok?si=tbVxD2HFCq25izCH
+- https://youtu.be/3LBiyBTnt7g?si=wIsaRPrNwo-9rhaA 
+- https://youtu.be/3pdjDOieuxs?si=s9PqPAs4yO3A4esQ s
+- https://github.com/sparkfun/SparkFun_TB6612FNG_Arduino_Library spark fun library for TB6612FNG, USE ONLY THIS
+- https://github.com/sparkfun/Motor_Driver-Dual_TB6612FNG
+- https://learn.sparkfun.com/tutorials/tb6612fng-hookup-guide/all spark fun tb6612fng
+- https://www.instructables.com/Simple-2-Wheel-ESP32-Robot-Using-the-TB6612FNG-Dua/ Simple 2 Wheel ESP32 Robot Using the TB6612FNG Dual Motor Controller
+- https://github.com/drf5n/Wokwi-Chip-TB6612FNG if people doing pcb design with tb6612fng
+
+
   
 
 
