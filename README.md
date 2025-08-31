@@ -59,11 +59,14 @@ As the robot navigates the path, it must identify and count all colored cubes. T
 
 * The track may contain loops, intersection, t - junctions, right-angle turns, acute turns, or diode-shaped paths.
 * The end of counting is indicated not by an intersection, but by a series of broken black lines on the track.
-* For intersections that occur before the broken line region in Phase 2, the bot is hardcoded to **always move straight**.
-* When the **broken lines are detected**, the bot performs a 180° turn, returns to the **start zone** (again detected by a black region greater than 25 mm), executes another 180° turn, and begins the **pick-and-place task**.
-* The track will contain **branching points** (e.g., T-intersections) that require a decision.
+* For intersections that occur before the broken line region in Phase 2, the bot can be hardcoded to **left or right or straight**.
+* At beginning , the bot will have to do an empty run counting the number of boxes present on the track. When the **broken lines are detected**, the bot performs a 180° turn, returns to the **start zone** (again) detected by a black region greater than 25 mm), executes another 180° turn, and begins the **pick-and-place task**.
+* After the empty run, the bot will have to detect the box (based on the color) and pick it. This time it will again detect the break line. Now it will have to detect the break line, it will have to cross it    and now it will detect an intersection.
+* The track will contain **branching points** (e.g., intersections) that require a decision.
 * **Left Turn →** red region, where the red box (Bomb Hazard) must be placed.
 * **Right Turn →** blue box (Radioactive Material) must be placed.
+* **Straight ->** end point (full black zone).
+* Once the number of boxes to be pick and placed is zero, at the same intersection it will have to make a decision and go to the end point.
 * Each drop zone is marked with a **large solid colored area**.
 * After placing all the hazardous materials, the robot must **proceed straight** from the final branching point to reach the end zone, also marked with a large black area greater than 25mm width.
 
