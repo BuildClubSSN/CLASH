@@ -5,6 +5,8 @@
 - It processes sensor inputs, applies algorithms (like PID for line following), and sends control signals to actuators.  
 - Without the MCU, sensors and actuators would work in isolation with no coordination.  
 
+---
+
 ### A small brief on how it works  
 - The MCU reads data from sensors (line sensors, color sensor, proximity sensor, etc.) using its input pins (digital or analog).  
 - It executes programmed logic (C/C++ or Arduino code) to make decisions. 
@@ -14,12 +16,15 @@
 - It also handles communication (Bluetooth, UART, I2C, SPI) between modules.
 - Arduino is an 8-bit MCU whereas ESP and STM are 32-bit (esp32 stm32).  
 
+---
+
 ### Common options  
 
-- **Arduino UNO / Nano (ATmega328P)** – beginner-friendly, cheap, widely used.  
-- **ESP32** – dual-core, built-in WiFi/Bluetooth, higher ADC resolution, useful for advanced robots.  
-- **STM32 (e.g., STM32F4 series)** – powerful ARM Cortex MCUs, used in more professional robots.  
+- **Arduino UNO / Nano (ATmega328P)**: beginner-friendly, cheap, widely used.  
+- **ESP32**: dual-core, built-in WiFi/Bluetooth, higher ADC resolution, useful for advanced robots.  
+- **STM32 (e.g., STM32F4 series)**: powerful ARM Cortex MCUs, used in more professional robots.  
 
+---
 
 ### Blogs or tutorials to help with  
 
@@ -50,3 +55,4 @@ ESP32 101:
 STM32 101:
 [STM32](https://youtu.be/2OwUnupABec?si=vmNiSuqTRprDeM8l)
 
+---

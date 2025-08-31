@@ -25,7 +25,7 @@ The core functionality for these bots revolves around two key capabilities:
 
 In this stage, the bot will perform fundamental navigation and sorting tasks on a pre-disclosed map. A rough demo map for phase 1 is given below:
 
-<div align="center"><img src="./resources/rough-track-phase-1.jpeg" width="500"></div><br>
+<div align="center"><img src="./media/rough-track-phase-1.jpeg" width="500"></div><br>
 
 #### Objectives:
 
@@ -65,7 +65,7 @@ As the robot navigates the path, it must identify and count all colored cubes. T
 * The track will contain **branching points** (e.g., intersections) that require a decision.
 * **Left Turn →** red region, where the red box (Bomb Hazard) must be placed.
 * **Right Turn →** blue box (Radioactive Material) must be placed.
-* **Straight ->** end point (full black zone).
+* **Straight →** end point (full black zone).
 * Once the number of boxes to be pick and placed is zero, at the same intersection it will have to make a decision and go to the end point.
 * Each drop zone is marked with a **large solid colored area**.
 * After placing all the hazardous materials, the robot must **proceed straight** from the final branching point to reach the end zone, also marked with a large black area greater than 25mm width.
@@ -87,7 +87,7 @@ As the robot navigates the path, it must identify and count all colored cubes. T
 
 ---
 
-## General Rules & Conduct
+## General Rules & Conduct (To Be Finalized)
 
 * **Attempts:** Each team will get **one official, timed run** for each stage.
 * **Calibration:** A short, designated period for sensor calibration on the official track will be provided before the official run begins.
@@ -142,3 +142,5 @@ Design recommendations and resources can be found here:
 - [🎨 Color Detection](resources/color-detection.md)  
 - [🤖 Gripper Control](resources/gripper-control.md)  
 - [📌 General Design Guidelines](resources/general-guidelines.md)
+
+---

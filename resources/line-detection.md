@@ -41,3 +41,5 @@ The accuracy of line detection directly affects the performance of all other sub
 - [Pololu QTR Sensors Overview](https://www.pololu.com/product/961)  
 - [TCRT5000 5 channel ir array](https://robu.in/product/tcrt5000l-5-channel-tracking-sensor-tracking-module-infrared-sensor/)
 - [DIY Line Follower with TCRT5000 (Instructables)](https://www.instructables.com/Make-a-FAST-Line-Follower-Robot-Using-PID/)  
+
+---

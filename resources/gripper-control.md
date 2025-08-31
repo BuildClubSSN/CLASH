@@ -3,7 +3,7 @@
 ## Introduction
 The gripper is like the 💪**hand**, responsible for detecting, picking, and placing cubes.
 - A 2-DOF(Degrees Of Freedom) gripper that is capable of lifting a cube of dimensions 5x5x5 cm weighing 50 g is required to be built and assembled along with a color sensor and proximity sensor. 
-- The color sensor detects the color of the cube by reading the strip that is to be placed opposite to the cube position (on the right), while the proximity sensor has to detect the presence of the cube placed at the left of the track within a fixed distance of about 10 cm. 
+- The color sensor detects the color of the cube by reading the strip that is to be placed opposite to the cube position (on the right), while the proximity sensor has to detect the presence of the cube placed at the left of the track within a fixed distance of about 15 cm. 
 - The proximity sensor ensures there's a cube present and the reading isn't a false positive and also acts as a fail safe mechanism to detect if the arm has lifted the cube up. 
 - The position of the sensors are to be strategically decided upon by each of the teams. - The gripper, color sensor and proximity sensor extensions are exempt from the 20 x 20 x 20 cm dimension rule.
 

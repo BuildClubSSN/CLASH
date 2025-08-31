@@ -1,3 +1,5 @@
+# Choosing The Right Power Supply
+
 Selecting the right batteries for embedded projects and robotics requires careful consideration of the load, component datasheets, current requirements, voltage endurance, and the battery’s C rating. The following report outlines the structured approach, key decision factors, and reference materials for effective battery selection in such applications.
 
 - https://www.n-denkei.com/india/topics/product_info/3264/
@@ -33,11 +35,12 @@ Selecting the right batteries for embedded projects and robotics requires carefu
 - Assess the following for voltage selection:
 - Match the battery’s nominal voltage to the system requirements (e.g., 7.4V for 2S Li-Ion/LiPo packs, 12V for lead acid or higher-voltage robot platforms)
 - Verify that all downstream components tolerate the maximum fully charged voltage; for example, Li-Ion batteries may charge up to 4.2V per cell (8.4V for 2S),
-  while most devices expect nominal cell voltage (3.7V per cell).
+  while most devices expect nominal cell voltage (3.7V per cell)
 
-# Battery weight, loading effects
+## Battery weight, loading effects
 - Battery weight and voltage significantly impact a robot’s ability to perform line-following, color sensing, and gripper tasks due to their effect on power
 - consumption, sensor stability, and total runtime
+
 ## Understanding Battery C Rating and Choosing Appropriately
 - What is C Rating?
 - The C rating quantifies how quickly a battery can be discharged relative to its capacity. A battery with a capacity of 1000mAh (1Ah) and a C rating of 10 (10C)
@@ -58,23 +61,24 @@ Selecting the right batteries for embedded projects and robotics requires carefu
 
   
 ## Useful Resources
-- Learning about how you have to think intuitively.
+
+#### Learning about how you have to think intuitively
+
 - https://www.youtube.com/watch?v=Iye4uVLmj8o
 - https://www.youtube.com/watch?v=IT19dg73nKU
   
-- LIPO :
+#### LIPO
 - https://youtu.be/Lk7wzVYmXSA?si=lTLMoxQMhIT-aQDK
 - https://youtu.be/arOXg7y6r8k?si=Pb2ru-8dAzZspAyl
 - (talks about lipo types and how to select one, LIPO is really great but it is very important on how you design)
 
 - Clear understanding of the basics are crucial for further debugging/development.
 - https://youtu.be/IT19dg73nKU?si=3DD5FhmGOrG8jrBz
-- different batteries
+
+#### Different batteries
 - https://youtu.be/5C3R7VWO1Bo?si=qcLUiYwL0JQezYpB
 - https://youtu.be/jgUVTZJyzoo?si=ymesC_FbXvpbry2j
 
 - https://www.youtube.com/watch?v=EnokkBZmPQw  How to NOT Blow Up Your Robot - Motors, Batteries, ESCs and More Explained!
 
-
-
-
+---
