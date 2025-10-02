@@ -64,15 +64,11 @@ As the robot navigates the path, it must identify and count all colored cubes. T
 
 📌 **Important Rule:** As given in the image, there will be an intersection **after the broken lines** where the bot must be hardcoded:  
   - **Left Turn →** to place the red box (Bomb Hazard).  
-  - **Right Turn →** to place the blue box (Radioactive Material).  
-  - Once both **red and blue box counts become zero**, the bot must proceed towards the **finish region** by hardcoding it to turn in the direction of the finish after placing the last box.  
+  - **Right Turn →** to place the blue box (Radioactive Material).
+  - **Straight →** end point (full black zone).  
+  - Once both **red and blue box counts become zero**, the bot must proceed towards the **finish region** by hardcoding it to turn in the direction of the finish after placing the last box which is all black region.  
+  - * Each drop zone can be identified by the **rectangular colored strips** on the **right of the bot**.  
 
-* **Left Turn →** red region, where the red box (Bomb Hazard) must be placed.  
-* **Right Turn →** blue box (Radioactive Material) must be placed.  
-* **Straight →** end point (full black zone).  
-* Once the number of boxes to be pick and placed is zero, at the same intersection it will have to make a decision and go to the end point.  
-* Each drop zone can be identified by the **rectangular colored strips** on the **right of the bot**.  
-* After placing all the hazardous materials, the robot must **proceed straight** from the final branching point to reach the end zone, also marked with a all black area.  
 
 
 ---
