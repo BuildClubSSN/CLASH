@@ -67,7 +67,7 @@ As the robot navigates the path, it must identify and count all colored cubes. T
   - **Right Turn →** to place the blue box (Radioactive Material).
   - **Straight →** end point (full black zone).  
   - Once both **red and blue box counts become zero**, the bot must proceed towards the **finish region** by hardcoding it to turn in the direction of the finish after placing the last box which is all black region.  
-  - * Each drop zone can be identified by the **rectangular colored strips** on the **right of the bot**.  
+  - Each drop zone can be identified by the **rectangular colored strips** on the **right of the bot**.  
 
 
 
