@@ -25,7 +25,7 @@ The core functionality for these bots revolves around two key capabilities:
 
 In this stage, the bot will perform fundamental navigation and sorting tasks on a pre-disclosed map. A rough demo map for phase 1 is given below:
 
-<div align="center"><img src="./media/rough-track-phase-1.jpeg" width="500"></div><br>
+<div align="center"><img src="./media/Round1_Rough_Track.png" width="500"></div><br>
 
 #### Objectives:
 
@@ -42,6 +42,8 @@ In this stage, the bot will perform fundamental navigation and sorting tasks on 
 ### Phase 2: The Final - 24hr Rescue Hackathon
 
 This stage is an on-the-spot hackathon on a new, un-disclosed map, designed to simulate a complex real-world rescue operation.
+
+<div align="center"><img src="./media/Round2_Last_Part_of_Track.png" width="500"></div><br>
 
 #### The Mission:
 
