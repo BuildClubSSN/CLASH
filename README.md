@@ -32,10 +32,7 @@ In this stage, the bot will perform fundamental navigation and sorting tasks on 
 1.  **Navigation:** The robot will navigate a black track. Colored cubes (**5x5x5 cm**) will be placed on the **left side** of the line_following track.
 2.  **Counting:** As the robot moves, it must maintain a running count of the cubes for each color (Red, Green, Blue).
 3.  **Checkpoint Logic:** The track includes **intersections** marked by a fully black strip (equal in width to the track). Upon reaching an intersection, the bot must analyze its current cube count to determine which color has appeared most frequently so far.There will be one box of each color placed after the intersection. After analysis, the bot must proceed and pick up the respective box.
-4.  **Placement Task:**  After picking, the bot continues along the line where three colored regions are marked on the left side floor and the same color strips are placed opposite to the regions . Using the color sensor, the bot identifies the matching region and places the box in its corresponding location.
-5.  **Finish:** Finally, the bot must proceed along the track after placing the box and stop when it detects a stop region, represented as an all-black area of width greater than 25 mm.
-
-> **Note:** The start and stop areas are larger in size than the intersection strips to be easily distinguishable.
+4.  **Placement Task:**  After picking, the bot continues along the line.There will be broken lines at the end, once the bot detects the broken lines, it should continously check for all black region(FINISH region).The bot should stop once it detects the FINISH region and it has to place the box on the ground.
 
 ---
 
@@ -59,18 +56,24 @@ As the robot navigates the path, it must identify and count all colored cubes. T
 
 #### Navigation and Delivery:
 
-* The track may contain loops, intersection, t - junctions, right-angle turns, acute turns, or diode-shaped paths.
-* The end of counting is indicated not by an intersection, but by a series of broken black lines on the track.
-* For intersections that occur before the broken line region in Phase 2, the bot can be hardcoded to **left or right or straight**.
-* At beginning , the bot will have to do an empty run counting the number of boxes present on the track. When the **broken lines are detected**, the bot performs a 180° turn, returns to the **start zone** (again) detected by a black region greater than 25 mm), executes another 180° turn, and begins the **pick-and-place task**.
-* After the empty run, the bot will have to detect the box (based on the color) and pick it. This time it will again detect the break line. Now it will have to detect the break line, it will have to cross it    and now it will detect an intersection.
-* The track will contain **branching points** (e.g., intersections) that require a decision.
-* **Left Turn →** red region, where the red box (Bomb Hazard) must be placed.
-* **Right Turn →** blue box (Radioactive Material) must be placed.
-* **Straight →** end point (full black zone).
-* Once the number of boxes to be pick and placed is zero, at the same intersection it will have to make a decision and go to the end point.
-* Each drop zone is marked with a **large solid colored area**.
-* After placing all the hazardous materials, the robot must **proceed straight** from the final branching point to reach the end zone, also marked with a large black area greater than 25mm width.
+* The track may contain loops, intersection, t - junctions, right-angle turns, acute turns, or diode-shaped paths.  
+* The end of counting is indicated not by an intersection, but by a series of broken black lines on the track.  
+* For intersections that occur before the broken line region in Phase 2, the bot can be hardcoded to **left or right or straight**.  
+* At beginning , the bot will have to do an empty run counting the number of boxes present on the track. When the **broken lines are detected**, the bot performs a 180° turn, either returns to the **start zone** or it can start to pick the boxes nearby broken black lines, executes another 180° turn, and begins the **pick-and-place task**.  
+* After the empty run, the bot will have to detect the box (based on the color) and pick it. This time it will again detect the break line. Now it will have to detect the break line, it will have to cross it and now it will detect an intersection.    
+
+📌 **Important Rule:** As given in the image, there will be an intersection **after the broken lines** where the bot must be hardcoded:  
+  - **Left Turn →** to place the red box (Bomb Hazard).  
+  - **Right Turn →** to place the blue box (Radioactive Material).  
+  - Once both **red and blue box counts become zero**, the bot must proceed towards the **finish region** by hardcoding it to turn in the direction of the finish after placing the last box.  
+
+* **Left Turn →** red region, where the red box (Bomb Hazard) must be placed.  
+* **Right Turn →** blue box (Radioactive Material) must be placed.  
+* **Straight →** end point (full black zone).  
+* Once the number of boxes to be pick and placed is zero, at the same intersection it will have to make a decision and go to the end point.  
+* Each drop zone can be identified by the **rectangular colored strips** on the **right of the bot**.  
+* After placing all the hazardous materials, the robot must **proceed straight** from the final branching point to reach the end zone, also marked with a all black area.  
+
 
 ---
 
