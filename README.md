@@ -31,7 +31,7 @@ In this stage, the bot will perform fundamental navigation and sorting tasks on 
 
 1.  **Navigation:** The robot will navigate a black track. Colored cubes (**5x5x5 cm**) will be placed on the **left side** of the line_following track.
 2.  **Counting:** As the robot moves, it must maintain a running count of the cubes for each color (Red, Green, Blue).
-3.  **Checkpoint Logic:** The track includes **intersections** marked by a fully black strip (equal in width to the track). Upon reaching an intersection, the bot must analyze its current cube count to determine which color has appeared most frequently so far. After analysis, it must return to the start and then pick up the respective box.
+3.  **Checkpoint Logic:** The track includes **intersections** marked by a fully black strip (equal in width to the track). Upon reaching an intersection, the bot must analyze its current cube count to determine which color has appeared most frequently so far.There will be one box of each color placed after the intersection. After analysis, the bot must proceed and pick up the respective box.
 4.  **Placement Task:**  After picking, the bot continues along the line where three colored regions are marked on the left side floor and the same color strips are placed opposite to the regions . Using the color sensor, the bot identifies the matching region and places the box in its corresponding location.
 5.  **Finish:** Finally, the bot must proceed along the track after placing the box and stop when it detects a stop region, represented as an all-black area of width greater than 25 mm.
 
